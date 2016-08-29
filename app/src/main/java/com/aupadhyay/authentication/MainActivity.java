@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         {
             Intent intent = new Intent(this, AlreadyVotedActivity.class);
             startActivity(intent);
+            finish();
         }
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
